@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div th:object="${geStations}">-->
+<!--    <span th:text="*{ej}">...</span>-->
+<!--</div>-->
+
+<table border="100">
+<tr  th:each="station : ${gestations}">
+    <td th:text="${station.name}">站點名稱</td>
+    <td th:text="${station.durl}">站點</td>
+
+</tr>
+</table>
+</body>
+</html>
